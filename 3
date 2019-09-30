@@ -1,14 +1,27 @@
-#include "stdafx.h"
+#include "pch.h"
+
 #include "iostream"
+
 using namespace std;
 
+
+
 int main()
+
 {
-	float a,x,y;
+	setlocale(LC_ALL, "ru");
+	float a, x, y,n,s;
+	cout << "Введите кол-во кг: " << endl;
 	cin >> x;
+	cout << "Введите цену за "<<x<< " кг: " << endl;
 	cin >> a;
+	cout << "Введите нужное количество кг: " << endl;
 	cin >> y;
-	a = a / x;
-	y = y * a;
-	cout << y << endl;
+
+	n = a / x;
+
+	s = y * n;
+	cout << "1 кг стоит: "<<n << " p."<< endl;
+	cout << y << " кг конфет стоит "<< s << " p."<< endl;
+
 }
