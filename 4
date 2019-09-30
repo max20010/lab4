@@ -1,14 +1,28 @@
-#include "stdafx.h"
+#include "pch.h"
+
 #include "iostream"
+
 using namespace std;
 
+
+
 int main()
+
 {
-	float v1,v2,s,t;
+	setlocale(LC_ALL, "ru");
+
+	float v1, v2, s, t;
+	cout << "Введите скорость первого автомобиля: ";
 	cin >> v1;
+	cout << "Введите скорость второго автомобиля: ";
 	cin >> v2;
+	cout << "Введите расстояние между ними в км: ";
 	cin >> s;
+	cout << "Введите время: ";
 	cin >> t;
+
 	s = s + v1 * t + v2 * t;
+
 	cout << s << endl;
+
 }
