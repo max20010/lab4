@@ -1,11 +1,12 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "iostream"
 using namespace std;
 
 int main()
+
 {
-	float a,x;
+	float a, x;
 	cin >> x;
-	a = (float)1/180*x;
-	cout << a << " pi" << endl;
+	a = (float)x / 180 * 3.14;
+	cout << a << endl;
 }
