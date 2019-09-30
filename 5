@@ -1,11 +1,23 @@
-#include "stdafx.h"
+#include "pch.h"
+
 #include "iostream"
+
 using namespace std;
 
+
+
 int main()
+
 {
-	float a,b;
+	setlocale(LC_ALL, "ru");
+
+	float a, b;
+	cout << "A*x + B = 0" << endl;
+	cout << "Введите A: ";
 	cin >> a;
+	cout << "Введите B: ";
 	cin >> b;
-	cout << -b / a << endl;
+
+	cout << "x = "<< -b / a << endl;
+
 }
