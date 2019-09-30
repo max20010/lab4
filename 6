@@ -1,15 +1,42 @@
-#include "stdafx.h"
+#include "pch.h"
+
 #include "iostream"
+
 using namespace std;
 
+
+
 int main()
+
 {
-	float a1,a2,b1,b2,c1,c2,x,x1,x2;
-	cin >> a1 >> b1 >> c1 >> a2 >> b2 >> c2;
+	setlocale(LC_ALL, "ru");
+
+	float a1, a2, b1, b2, c1, c2, x, x1, x2;
+	cout << "A1*x + B1*y = C1" << endl;
+	cout << "A2*x + B2*y = C2" << endl;
+	cout << "Введите A1: ";
+	cin >> a1;
+	cout << "Введите B1: ";
+	cin >> b1;
+	cout << "Введите C1: ";
+	cin >> c1;
+	cout << "Введите A2: ";
+	cin >> a2;
+	cout << "Введите B2: ";
+	cin >> b2;
+	cout << "Введите C2: ";
+	cin >> c2;
+
 	x = a1 * b2 - a2 * b1;
+
 	x1 = c1 * b2 - c2 * b1;
+
 	x2 = a1 * c2 - a2 * c1;
+
 	x1 = x1 / x;
+
 	x2 = x2 / x;
-	cout << "x1 = "<< x1 << "\t x2 = " << x2 << endl;
+
+	cout << "x1 = " << x1 << "\t x2 = " << x2 << endl;
+
 }
